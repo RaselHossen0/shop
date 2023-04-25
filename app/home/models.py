@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+# class student:
+    # name=models.CharField(max_length=255)
+    # roll=models.ForeignKey(models.CASCADE)
+    
+    
+    
