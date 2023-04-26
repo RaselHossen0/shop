@@ -3,11 +3,13 @@
 
 
 {% block content %}
+<h1>Items</h1>
 {% for x in items %}
 <div class="grid">
 <h1><b>{{x.name}}</b></h1>
 <li>{{x.descriptions}}</li>
+<li><img src="{{x.images}}"></li>
 </div>
 {% endfor %}
-<h1>I am Rasel</h1>
+
  {% endblock  %}
