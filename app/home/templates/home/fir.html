@@ -3,13 +3,31 @@
 
 
 {% block content %}
-<h1>Items</h1>
+<div class="mt-5 px-3 py-5 bg-light rounded" style="overflow: scroll;"   >
+  <h2 class="mb-4 text-center">Newest Items</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-3"   >
+
 {% for x in items %}
-<div class="grid">
-<h1><b>{{x.name}}</b></h1>
-<li>{{x.descriptions}}</li>
-<li><img src="{{x.images}}"></li>
-</div>
+        <div>
+        <a href="{% url 'x:detail' x.id %}">
+            <div style=" width:60%; height:60%; overflow:hidden;"  >
+            <img src="{{x.image.url}}" class="img-fluid rounded "  >
+            </div>
+
+        
+        </a>
+            <div>
+            <h3>{{x.name}}</h3>
+            </div>
+             <div>
+            <h3>{{x.price}}</h3>
+            </div>
+
+        </div>
 {% endfor %}
+
+</div>
+</div>
+
 
  {% endblock  %}

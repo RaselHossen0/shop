@@ -10,16 +10,20 @@
 <title>{% block title%}{%endblock%}| Dear!</title>
 </head>
 <body>
-<nav  class="nav" >
-<a href="/"  class="button" >Home</a>
-<a href="showCat/" class="button">New Item </a>
-<a href="/"  class="button">Browse</a>
-<a href="/"  class="button">Login </a>
-<a href="/"  class="button">Sign Up </a>
-
+<nav class="navbar navbar-light navbar-expand-md p-0 bg-primary-subtle justify-content-center flex-container sticky-top">
+<div >
+  <ul class="navbar-nav d-none d-md-flex mr-auto">
+           <li class="nav-item"> <a href="/" class="nav-link" >Home</a></li>
+            <li class="nav-item"><a href="showCat/" class="nav-link">New Item </a></li>
+            <li class="nav-item"><a href="/" class="nav-link" >Browse</a></li>
+            <li class="nav-item"><a href="/" class="nav-link" >Login </a></li>
+            <li class="nav-item"><a href="/"  class="nav-link">Sign Up </a></li>
+</li>
+</div>
 </nav>
 <div >
  {% block content %}
+ 
  {% endblock  %} 
 </div>
 <footer class="bottom">

@@ -1,0 +1,25 @@
+            {% extends 'home/base.html'%}
+
+            {% block title %}{{item.name}} {% endblock%}
+
+            {% block content%}
+            <div class="container row row-cols-1 row-cols-md-2 g-300">
+             
+                <div>
+                    <img src=" {{item.image.url}}" style="overflow:hidden;width:400px;height:100%;">
+                </div>
+                <div>
+                    <h1 class="row-cols-1">{{item.name}}</h1>
+               
+                  <p class="row-gap-sm-2">{{item.descriptions}}</p>
+                
+                  <p class="row-gap-sm-2">{{item.category}}</p>
+                  <h3 class="row-gap-sm-2">{{item.price}}</h3>
+                
+                  <p class="row-gap-sm-2">{{item.descriptions}}</p>
+              
+                  <p class="row-gap-sm-2">{{item.category}}</p>
+                </div>
+
+            </div>
+            {% endblock%}

@@ -33,15 +33,15 @@
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 16px;
+  /* border-radius: 16px;
   height: 40px;
 width: 130px;
-  padding: 4px;
+  padding: 4px; */
   /* border: 1px; */
   cursor: pointer;
   align-items:center;
     justify-content:center;
  
-   margin: 10 100px;
+   /* margin: 10 100px; */
  text-align: center;
 }
